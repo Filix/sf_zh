@@ -1,0 +1,10 @@
+{% extends "::base.html.twig" %}
+{% block content %}
+{{ md_content|raw }}
+{% endblock content %}
+{% block footer %}
+<div style="height: 60px; line-height:60px; border-top:1px solid #ccc; margin-top: 20px;">
+    <span style="float: left;">Powered by <a href="http://symfony.com/" target="_blank">Symfony</a></span> 
+    <span style="float:right"><a href="https://github.com/Filix" target="_blank">Fork me on Github</a></span>
+</div>
+{% endblock footer %}

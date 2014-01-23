@@ -1,0 +1,4 @@
+the_book:
+    resource: "@FilixTheBookBundle/Controller/"
+    prefix:   /the_book
+    

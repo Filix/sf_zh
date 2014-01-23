@@ -1,0 +1,7 @@
+parameters:
+#    filix_the_book.example.class: Filix\TheBookBundle\Example
+
+services:
+#    filix_the_book.example:
+#        class: %filix_the_book.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
