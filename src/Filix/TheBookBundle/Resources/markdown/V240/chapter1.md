@@ -8,7 +8,7 @@
 
 HTTP(超文本传输协议)是一种允许两台机器相互通讯的文本语言。就是这样。举个例子，当你去xkcd网查看最新的漫画时，下面这些对话将会发生：
 
-<img src="http://d.pcs.baidu.com/thumbnail/34c03701f9725600444cbefade7f0eb1?fid=4197171002-250528-2811128086&time=1390441164&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-WEiqCy2MwqspYxvWPno%2F1KqEm7A%3D&expires=8h&prisign=RK9dhfZlTqV5TuwkO5ihMQzlM241kT2YfffnCZFTaEPwOxHv/XxtwRXLxDSXMBba1Ms9seOiqT9/QffwI8K2Baw0mmLABRQNl51b/oS8+InqoadADmwcyuno+Sp2yNGKYO32SsSBSgHZ09BZiFo3CF7dwGcK/xIzj9971pKao/QALkDxW+JJC9zJS3FHk0o7hwlE+iLY71VeuRj/Oc1xMqUtUOl6PuGm&r=296067926&size=c850_u580&quality=100" />
+<img src="https://raw.github.com/Filix/sf_zh/master/src/Filix/TheBookBundle/Resources/public/images/the_book/v240/c1_1.png" />
 
 虽然上面的语言有点正式，但是仍然非常简单。HTTP就是用来描述这个简单的基于文本的语言。不管你如何在web上开发，你的目标服务器总是能理解简单的文本请求，并且返回一个简单的文本相应。
 
@@ -18,7 +18,7 @@ web上的每个会话都已一个请求开始。请求就是一个客户端（�
 
 看看浏览器和xkcd web服务器交互的第一部分：
 
-<img src="http://d.pcs.baidu.com/thumbnail/6074731c164d9443cf139a2a0b378c29?fid=4197171002-250528-333955890&time=1390441164&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-xIy0bAQVB5RGBM%2F1jwDiSVjtU8g%3D&expires=8h&prisign=RK9dhfZlTqV5TuwkO5ihMQzlM241kT2YfffnCZFTaEPwOxHv/XxtwRXLxDSXMBba1Ms9seOiqT9/QffwI8K2Baw0mmLABRQNl51b/oS8+InqoadADmwcyuno+Sp2yNGKYO32SsSBSgHZ09BZiFo3CF7dwGcK/xIzj9971pKao/QALkDxW+JJC9zJS3FHk0o7hwlE+iLY71VeuRj/Oc1xMqUtUOl6PuGm&r=818145807&size=c850_u580&quality=100" />
+<img src="https://github.com/Filix/sf_zh/blob/master/src/Filix/TheBookBundle/Resources/public/images/the_book/v240/c1_2.png?raw=true" />
 
 
 在HTTP会话中，这个HTTP请求可以被看成这样：
@@ -52,7 +52,7 @@ web上的每个会话都已一个请求开始。请求就是一个客户端（�
 
 一旦服务器接收到请求，它就知道客户端需要哪个资源（通过uri），以及客户端希望如何操作该资源（通过请求方法）。比如，在一个get方式的请求中，服务器准备资源，然后在一个http响应中返回它。想象下从xkcd服务器上来的响应：
 
-<img src="http://d.pcs.baidu.com/thumbnail/34c03701f9725600444cbefade7f0eb1?fid=4197171002-250528-1612816342&time=1390441164&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-MzPXPRvlHmPACm3HuOu8NiAy8gI%3D&expires=8h&prisign=RK9dhfZlTqV5TuwkO5ihMQzlM241kT2YfffnCZFTaEPwOxHv/XxtwRXLxDSXMBba1Ms9seOiqT9/QffwI8K2Baw0mmLABRQNl51b/oS8+InqoadADmwcyuno+Sp2yNGKYO32SsSBSgHZ09BZiFo3CF7dwGcK/xIzj9971pKao/QALkDxW+JJC9zJS3FHk0o7hwlE+iLY71VeuRj/Oc1xMqUtUOl6PuGm&r=733913938&size=c850_u580&quality=100" />
+<img src="https://github.com/Filix/sf_zh/blob/master/src/Filix/TheBookBundle/Resources/public/images/the_book/v240/c1_3.png?raw=true" />
 
 
 转义成HTTP，发送回浏览器的响应看起来像这样：
@@ -228,7 +228,7 @@ Symfony就是为了解决这类问题而存在的。
 
 当你让Symfony处理每个请求，整个生命期是很简单的。Symofny按照下面的流程处理每个请求：
 
-<img src="http://d.pcs.baidu.com/thumbnail/932328a5d21efd3113d0c217eaf70a3a?fid=4197171002-250528-3176711294&time=1390441164&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-cgQDENw%2B8zzEJ4Tuiiom5CoZZKA%3D&expires=8h&prisign=RK9dhfZlTqV5TuwkO5ihMQzlM241kT2YfffnCZFTaEPwOxHv/XxtwRXLxDSXMBba1Ms9seOiqT9/QffwI8K2Baw0mmLABRQNl51b/oS8+InqoadADmwcyuno+Sp2yNGKYO32SsSBSgHZ09BZiFo3CF7dwGcK/xIzj9971pKao/QALkDxW+JJC9zJS3FHk0o7hwlE+iLY71VeuRj/Oc1xMqUtUOl6PuGm&r=658795858&size=c850_u580&quality=100" />
+<img src="https://github.com/Filix/sf_zh/blob/master/src/Filix/TheBookBundle/Resources/public/images/the_book/v240/c1_4.png?raw=true" />
 
 进入的请求被路由器拦截，然后传给控制器的方法，最终返回一个Response对象。
 
@@ -253,7 +253,7 @@ Symfony就是为了解决这类问题而存在的。
 
 这个列子使用YAML文件定义路由配置。路由配置也可以用其他格式书写，比如xml，php。
 
-当某人访问了"/contact"页面，这条路由被匹配，然后指定的控制器被执行。字符串"AcmeDemoBundle:Main:contact"是一种简写的语法，它指向了MainController类中的contactAction这个方法，你可以通过[routing chapter](http://symfony.com/doc/current/book/routing.html)了解更多：
+当某人访问了"/contact"页面，这条路由被匹配，然后指定的控制器被执行。字符串"AcmeDemoBundle:Main:contact"是一种简写的语法，它指向了MainController类中的contactAction这个方法，你可以通过[routing chapter](http://symfonycn.com/the_book/v2.4.0/routing)了解更多：
 
     // src/Acme/DemoBundle/Controller/MainController.php
     namespace Acme\DemoBundle\Controller;
@@ -270,7 +270,7 @@ Symfony就是为了解决这类问题而存在的。
 
 
 
-在这个简单的例子中，控制器创建了一个包含了`<h1>Contact us!</h1>`字符串的Response对象。在[controller chapter](http://symfony.com/doc/current/book/controller.html)你可以学到控制器可以渲染模板，允许表现层代码（任何可以输出html的）写在单独的模板文件中。不需要控制器去关心一些负责的任务，比如操作数据库、处理提交的数据或者发送邮件。
+在这个简单的例子中，控制器创建了一个包含了`<h1>Contact us!</h1>`字符串的Response对象。在[controller chapter](http://symfonycn.com/the_book/v2.4.0/controller)你可以学到控制器可以渲染模板，允许表现层代码（任何可以输出html的）写在单独的模板文件中。不需要控制器去关心一些负责的任务，比如操作数据库、处理提交的数据或者发送邮件。
 
 ##Symofny2：创建你的app，而不是你的工具
 
@@ -308,40 +308,8 @@ Symfony就是为了解决这类问题而存在的。
 Symfony2提供了大量工具去加快web应用的开发，而不使你的应用臃肿。一般用户可以通过使用Symfony2发行版快速上手，它提供了一个项目的骨架和一些简单的默认配置。对于高级用户，天空才是极限。
  
 
+###文档下载
 
+Doc: [Word版下载](http://yun.baidu.com/s/1kTHkJ0V)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Pdf: [Pdf版下载](http://yun.baidu.com/s/1c08B6Wo)
