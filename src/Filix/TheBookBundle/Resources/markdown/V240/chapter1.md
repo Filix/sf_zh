@@ -69,6 +69,8 @@ web上的每个会话都已一个请求开始。请求就是一个客户端（�
 
 http响应中包含了请求的资源（该例子中就是html内容），同时还有其他信息。第一行是特别重要的，包含了HTTP响应的状态码（例子中为200）。这个状态码表明，请求的全部结果返回到了客户端。那么，这个请求是否成功了？是否发生了错误？不同的状态码表示不同的结果，成功，错误，或者客户端需要做一些事（比如跳转到其他页面）。完整的列表可以在维基百科的文章中阅读[List of common media types](http://en.wikipedia.org/wiki/Internet_media_type#List_of_common_media_types)。
 
+和请求一样，HTTP响应还包含了其他的一些信息，都称之为HTTP头。比如说，最重要的一个头是Content-Type。同一个资源的内容可以通过多种格式返回，像html，xml或者json。Content-Type头使用类似text/html这样的互联网媒体类型告诉客户端返回的是什么格式。常见的媒体类型通过维基百科的[List of common media types](http://en.wikipedia.org/wiki/Internet_media_type#List_of_common_media_types)文章中了解。
+
 还有很多其他的响应头存在，他们中有些能力非常大。比如说有些头可以用来构建一个强大的缓存系统。
 
 
@@ -310,6 +312,6 @@ Symfony2提供了大量工具去加快web应用的开发，而不使你的应用
 
 ###文档下载
 
-Doc: [Word版下载](http://yun.baidu.com/s/1kTHkJ0V)
+Doc: [Word版下载](http://pan.baidu.com/s/19vCQE)
 
-Pdf: [Pdf版下载](http://yun.baidu.com/s/1c08B6Wo)
+Pdf: [Pdf版下载](http://pan.baidu.com/s/1nt5BxSP)
