@@ -36,7 +36,7 @@ class V240Controller extends BaseController
      * @Route("/symfony2-versus-flat-php",name="c2_v240")
      */
     public function chapter2Action(){
-        return $this->renderMarkDown('V240/chapter1.md');
+        return $this->renderMarkDown('V240/chapter2.md');
     }
     
     /**
