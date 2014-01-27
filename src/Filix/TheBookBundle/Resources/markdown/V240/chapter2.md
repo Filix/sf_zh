@@ -2,7 +2,7 @@
 
 **为什么说Symfony2比打开一个文件，然后直接开始写php代码要好？**
 
-如果你从没有用户框架、或者不熟悉MVC概念、或者只是被Symfony2的一些讨论所吸引，那么，这章是为你准备的。
+如果你从没有用过框架、或者不熟悉MVC概念、或者只是被Symfony2的一些讨论所吸引，那么，这章是为你准备的。
 我们不会直接告诉你Symfony2比用原生的PHP使得开发更快速、软件质量更好，你自己会体会到的。
 
 在这章中，你将会用原生的PHP写一个小应用，然后把它重构，使之更有组织性。
@@ -583,3 +583,8 @@ Symfony2很好的支持Twig。PHP模板也一直被Symfony2支持，Twig的更�
 * [如何将控制器定义为服务](http://symfony.com/doc/current/cookbook/controller/service.html)
 
 
+###文档下载
+
+Doc: [Word版下载](http://pan.baidu.com/s/1i3uUp97)
+
+Pdf: [Pdf版下载](http://pan.baidu.com/s/1c0h7oDa)
