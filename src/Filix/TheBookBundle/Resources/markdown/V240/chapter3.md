@@ -79,26 +79,26 @@ Symfony项目依赖很多的外部库。他们通过一个叫[Composer](http://g
 
 根据你如何下载的Symfony，你可能需要立即更新你的vendor目录。但是，更新你的vendor是非常安全的，它能保证你拥有你所需的所有库。
 
-第一步，获取Composer
+**第一步，获取Composer**
 
     $ curl -s http://getcomposer.org/installer | php
 
 保证你下载的composer.phar文件和composer.json文件在同一个目录（默认是Symfony项目的跟目录）。
 
-第二步，安装vendors
+**第二步，安装vendors**
 
     $ php composer.phar install
 
 这个命令会下载所有需要的vendor库（包括Symfony自身）到vendor目录。
 
-*如果你没有安装curl，你可以在[http://getcomposer.org/installer](http://getcomposer.org/installer)手动下载installer文件。
+如果你没有安装curl，你可以在[http://getcomposer.org/installer](http://getcomposer.org/installer)手动下载installer文件。
 把这个文件放到你的项目中，然后运行：
 
     $ php installer
     $ php composer.phar install
-*
 
-*当运行php composer.phar install或者php composer.phar update，Composer在执行install/update命令之后会清除缓存和安装资源。
+
+当运行php composer.phar install或者php composer.phar update，Composer在执行install/update命令之后会清除缓存和安装资源。
 默认情况下这些资源会被复制到web目录
 
 如果你的操作系统支持，你可以创建符号链接而不是复制。
@@ -111,7 +111,7 @@ Symfony项目依赖很多的外部库。他们通过一个叫[Composer](http://g
     }
 
 当给symfony-assets-install赋relation而不是symlink的值时，这个命令会创建相对的符号链接。
-*
+
 
 ###配置和安装
 
@@ -123,8 +123,8 @@ Symfony2自带了一个服务的测试工具，帮助你确认你的web服务器
 
 如果出现任何问题，在继续之前先解决他们。
 
-*
-配置权限
+
+**配置权限**
 
 一个常见问题是app/cache和app/logs目录必须对web服务器和命令行用户都是可写的。
 在UNIX系统中，如果web服务器的用户和命令行用户不是同一个用户，你可以运行一次下面的命令保证权限被正确的配置。
@@ -162,17 +162,18 @@ Symfony2自带了一个服务的测试工具，帮助你确认你的web服务器
 
     umask(0000); // This will let the permissions be 0777
 
-*
+
 
 当所有事情都好了，点击“Go to the Welcome page”去请求你第一个真的Symfony2页面：
 
 http://localhost/app_dev.php/
 
 Symfony2会欢迎和祝贺你到目前为止的努力。
+<img src="https://github.com/Filix/sf_zh/blob/master/src/Filix/TheBookBundle/Resources/public/images/the_book/v240/c3_1.jpg?raw=true" />
 
-*想要获取精简的url，你要更改web服务器或虚拟主机的根目录到symfony/web目录。
+想要获取精简的url，你要更改web服务器或虚拟主机的根目录到symfony/web目录。
 尽管在开发环境这不是必须的，但是推荐在你的应用部署到生成环境时这么做。
-想获取配置web服务器根目录的信息，阅读[配置web服务器](http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html)或查阅你的web服务器的官方文档：[Apache](http://httpd.apache.org/docs/current/mod/core.html#documentroot)，[Nginx](http://wiki.nginx.org/Symfony)。*
+想获取配置web服务器根目录的信息，阅读[配置web服务器](http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html)或查阅你的web服务器的官方文档：[Apache](http://httpd.apache.org/docs/current/mod/core.html#documentroot)，[Nginx](http://wiki.nginx.org/Symfony)。
 
 
 ##开始开发
@@ -185,7 +186,7 @@ Symfony2会欢迎和祝贺你到目前为止的努力。
 
 也要保证查看[CookBook](http://symfony.com/doc/current/cookbook/index.html)，他介绍了Symfony中一些特定问题的解决方法。
 
-*如果你想移除demo代码，看看cookbook中的文章[如何移除AcmeDemoBundle](http://symfony.com/doc/current/cookbook/bundles/remove.html)*
+如果你想移除demo代码，看看cookbook中的文章[如何移除AcmeDemoBundle](http://symfony.com/doc/current/cookbook/bundles/remove.html)
 
 ##使用代码控制工具
 
@@ -208,3 +209,5 @@ Symfony标准发行版是你的新项目的第一个版本。
 Doc: [Word版下载](http://pan.baidu.com/s/1pJ2jAcz)
 
 Pdf: [Pdf版下载](http://pan.baidu.com/s/1jGjwVXW)
+
+<a style="float:left; display: block; width:49%; padding: 20px 0px;; text-decoration: none; font-size: 18px; border: 1px solid #ccc; text-align:center; margin: 50px 0px;" href="http://symfonycn.com/the_book/v2.4.0/symfony2-versus-flat-php">上一篇： Symfony2 VS 原生的PHP</a><a style="float:left; display: block; width:50%; padding: 20px 0px;; text-decoration: none; font-size: 18px; border: 1px solid #ccc; text-align:center; margin: 50px 0px;" href="http://symfonycn.com/the_book/v2.4.0/creating-pages-in-symfony2">下一篇： 在Symfony2中创建页面</a>

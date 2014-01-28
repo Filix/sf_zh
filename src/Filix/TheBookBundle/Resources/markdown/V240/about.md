@@ -16,3 +16,5 @@ Symfony2是一个不错的PHP框架。在国外，Symfony有众多的追随者�
 邮箱： syp.syl@gmail.com
 
 工作： 在魔都混饭吃的phper一枚
+
+<a href="http://symfonycn.com/the_book/v2.4.0/symfony2-and-http-fundamentals" style="float:left; display: block; width:100%; padding: 20px 0px;; text-decoration: none; font-size: 18px; border: 1px solid #ccc; text-align:center; margin: 50px 0px;">下一篇： Symfony2和HTTP基本原理</a>

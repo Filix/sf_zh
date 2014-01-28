@@ -315,3 +315,5 @@ Symfony2提供了大量工具去加快web应用的开发，而不使你的应用
 Doc: [Word版下载](http://pan.baidu.com/s/19vCQE)
 
 Pdf: [Pdf版下载](http://pan.baidu.com/s/1nt5BxSP)
+
+<a style="float:left; display: block; width:49%; padding: 20px 0px;; text-decoration: none; font-size: 18px; border: 1px solid #ccc; text-align:center; margin: 50px 0px;" href="http://symfonycn.com/the_book/v2.4.0/about">上一篇： 说明</a><a style="float:left; display: block; width:50%; padding: 20px 0px;; text-decoration: none; font-size: 18px; border: 1px solid #ccc; text-align:center; margin: 50px 0px;" href="http://symfonycn.com/the_book/v2.4.0/symfony2-versus-flat-php">下一篇： Symfony2 VS 原生的PHP</a>

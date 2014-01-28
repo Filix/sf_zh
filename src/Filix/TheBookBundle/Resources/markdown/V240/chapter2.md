@@ -588,3 +588,6 @@ Symfony2很好的支持Twig。PHP模板也一直被Symfony2支持，Twig的更�
 Doc: [Word版下载](http://pan.baidu.com/s/1i3uUp97)
 
 Pdf: [Pdf版下载](http://pan.baidu.com/s/1c0h7oDa)
+
+
+<a style="float:left; display: block; width:49%; padding: 20px 0px;; text-decoration: none; font-size: 18px; border: 1px solid #ccc; text-align:center; margin: 50px 0px;" href="http://symfonycn.com/the_book/v2.4.0/symfony2-and-http-fundamentals">上一篇： Symfony2和HTTP基本原理</a><a style="float:left; display: block; width:50%; padding: 20px 0px;; text-decoration: none; font-size: 18px; border: 1px solid #ccc; text-align:center; margin: 50px 0px;" href="http://symfonycn.com/the_book/v2.4.0/installing-and-configuring-symfony">下一篇： 安装和配置Symfony</a>
