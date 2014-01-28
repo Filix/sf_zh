@@ -43,7 +43,7 @@ class V240Controller extends BaseController
      * @Route("/installing-and-configuring-symfony",name="c3_v240")
      */
     public function chapter3Action(){
-        return $this->renderMarkDown('V240/empty.md');
+        return $this->renderMarkDown('V240/chapter3.md');
     }
     
     /**
