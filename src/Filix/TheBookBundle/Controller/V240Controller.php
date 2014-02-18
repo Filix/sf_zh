@@ -50,7 +50,7 @@ class V240Controller extends BaseController
      * @Route("/creating-pages-in-symfony2",name="c4_v240")
      */
     public function chapter4Action(){
-        return $this->renderMarkDown('V240/empty.md');
+        return $this->renderMarkDown('V240/chapter4.md');
     }
     
     /**

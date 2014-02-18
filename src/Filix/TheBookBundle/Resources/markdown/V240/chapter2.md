@@ -15,7 +15,6 @@
 在这章，你将会用原生的php搭建一个象征性的博客应用。首先，创建一个页面用来展示存在数据库中的所有博客条目。
 使用原生的php是很快的，同时也很混乱。
 
-
     <?php
     // index.php
     $link = mysql_connect('localhost', 'myuser', 'mypassword');

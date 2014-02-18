@@ -11,18 +11,25 @@
 </div>
 {% endblock footer %}
 {% block javascripts %}
+{% javascripts  '@FilixTheBookBundle/Resources/public/js/highlight.pack.js' %}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+<script type="text/javascript">
+  hljs.configure({tabReplace: '    '}); // 4 spaces
+  hljs.initHighlightingOnLoad();
+</script>
+{% endjavascripts  %}
 <!-- Duoshuo Comment BEGIN -->
 <div class="ds-thread"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"symfonycn"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = 'http://static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		|| document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
+(function() {
+var ds = document.createElement('script');
+ds.type = 'text/javascript';ds.async = true;
+ds.src = 'http://static.duoshuo.com/embed.js';
+ds.charset = 'UTF-8';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
 <!-- Duoshuo Comment END -->
+{{ parent() }}
 {% endblock %}
